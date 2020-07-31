@@ -1,0 +1,129 @@
+.fade
+    -webkit-animation-name: fade
+    -webkit-animation-duration: 3s
+    animation-name: fade
+    animation-duration: 3s
+
+@-webkit-keyframes fade
+    from
+        opacity: 0
+    to
+        opacity: 1
+
+@keyframes fade
+    from
+        opacity: 0
+    to
+        opacity: 1
+    
+@media screen and ( max-width: 768px )
+    body
+        font-size: 14px
+
+    .hamburger
+        position: absolute
+        top: 25px
+        right: 20px
+        z-index: 2
+        height: 30px
+        cursor: pointer
+
+    .line1,
+    .line2,
+    .line3
+        width: 20px
+        height: 2px
+        border-radius: 5px
+        background-color: $brand-light
+        transition: all 1s ease
+
+    .line2
+        transform: translateY(6px)
+        width: 20px
+        transition: all .3s ease
+
+    .line3
+        transform: translateY(12px)
+
+    .close
+        top: 30px
+    
+    .close .line1
+        transform: rotate(45deg)
+    .close .line3
+        margin-top: -4px
+        transform: rotate(-45deg)
+    .close .line2
+        width: 0
+    
+    ul.navbar-list
+        display: none
+
+    ul.navbar-list.responsive
+        animation: navbar-left 1s ease-in-out
+        -webkit-animation: navbar-left 1s ease-in-out
+        display: flex
+        flex-direction: column
+        position: absolute
+        z-index: 2
+        top: 0
+        right: 0
+        padding: 50px 30px
+        background-color: #ffffff
+    
+    ul.navbar-list.responsive li.navbar-list-item
+        background-color: #ffffff
+        margin-left: 0
+        padding: 20px
+
+    ul.navbar-list.responsive li.navbar-list-item a
+        font-size: 13px
+
+    ul.navbar-list.responsiveReturn
+        transform: translateY(-100%)
+        animation: navbar-right 1s ease-in-out
+        -webkit-animation: navbar-right 1s ease-in-out
+
+    @keyframes navbar-left
+        0%
+            transform: translateY(-100%)
+        100%
+            transform: translateY(0)
+
+    @-webkit-keyframes navbar-left
+        0%
+            transform: translateY(-100%)
+        100%
+            transform: translateY(0)
+
+    @keyframes navbar-right
+        0%
+            transform: translateY(0)
+        100%
+            transform: translateY(-100%)
+
+    @-webkit-keyframes navbar-right
+        0%
+            transform: translateY(0)
+        100%
+            transform: translateY(-100%)
+
+    
+    .nav-img-container img
+        width: 150px
+
+    .nav-img-container
+        padding: 10px 0
+
+    .prev,
+    .next
+        padding: 16px
+        margin-top: -22px
+        color: white
+        font-weight: bold
+        font-size: 20px
+        transition: 0.6s ease
+        border-radius: 0 3px 3px 0
+        user-select: none
+        &:hover
+            background: none

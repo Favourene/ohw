@@ -1,0 +1,163 @@
+.container
+    width: 85%
+    margin: auto
+    
+.nav-container
+    width: 85%
+    margin: auto
+    display: flex
+    justify-content: space-between
+
+.nav-img-container
+    width: 200px
+    padding-top: 10px
+
+ul.navbar-list
+    // float: right
+    display: flex
+    list-style: none
+
+ul.navbar-list li.navbar-list-item
+    padding: 30px 0 30px 60px
+
+ul.navbar-list li.navbar-list-item a
+    text-decoration: none
+    color: $brand-dark
+    font-weight: 500
+
+ul.navbar-list li.navbar-list-item a:hover
+    color: $brand-green
+
+.header-container
+    width: 85%
+    margin: auto
+
+.header-text-wrapper
+    width: 70%
+
+.header-btn-wrapper
+    margin-top: 50px
+
+img.owl-img
+    width: 100%
+
+
+.mySlides
+    display: none
+
+img
+    vertical-align: middle
+
+.slideshow-container
+    position: relative
+    margin: auto
+
+.prev,
+.next
+    cursor: pointer
+    position: absolute
+    top: 50%
+    width: auto
+    padding: 16px
+    margin-top: -22px
+    color: white
+    font-weight: bold
+    font-size: 60px
+    transition: 0.6s ease
+    border-radius: 0 3px 3px 0
+    user-select: none
+
+.next
+    right: 0
+    border-radius: 3px 0 0 3px
+
+.prev:hover,
+.next:hover
+    background-color: rgba(0,0,0,0.8)
+
+
+.text
+    color: #f2f2f2
+    font-size: 24px
+    padding: 30px 0
+    position: absolute
+    width: 100%
+    bottom: 0
+    background-color: rgba(0,0,0,0.6)
+    p
+        margin-left: 70px
+
+.dot
+    cursor: pointer
+    height: 15px
+    width: 15px
+    margin: 0 2px
+    background-color: transparent
+    border: 1px solid #fff
+    border-radius: 50%
+    display: inline-block
+    transition: background-color 0.6s ease
+
+.active,
+.dot:hover
+    background-color: #fff
+
+.owl-container
+    width: 100%
+    margin: auto
+
+.fade
+    -webkit-animation-name: fade
+    -webkit-animation-duration: 1.5s
+    animation-name: fade
+    animation-duration: 1.5s
+
+@-webkit-keyframes fade
+    from
+        opacity: .4
+    to
+        opacity: 1
+
+@keyframes fade
+    from
+        opacity: .4
+    to
+        opacity: 1
+
+.round
+    background: none
+    position: absolute
+    z-index: 2
+    margin-top: -30px
+    right: 50px
+
+.footer-container
+    border-top: 2px solid $brand-green
+    border-bottom: 2px solid $brand-green
+    padding: 30px 0
+    margin: 30px 0 50px
+
+.footer-credits-container
+    text-align: center
+    padding: 60px 0
+    background: $brand-light
+
+.copyright
+    margin-bottom: 20px
+
+.footer-links
+    display: inline-block
+
+.foot
+    padding: 0 20px
+    border-right: 2px solid #ffffff
+
+.foot a
+    color: $brand-dark
+    text-decoration: none
+
+.foot a:hover
+    color: #ffffff
+
+.last
+    border-right: none
